@@ -1,0 +1,99 @@
+/* CSS del encabezado de la página */
+
+header {
+	background: url(./imagenes/bg.jpg);
+	padding: 20px 0;
+}
+
+.caja {
+	width: 940px;
+	position: relative;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav a:hover {
+	color: #c71999;
+	text-decoration: underline;
+}
+
+/* CSS del pie de página */
+
+footer {
+	text-align: center;
+	background: url(./imagenes/bg.jpg);
+	padding: 40px;
+}
+
+.logoFooter {
+	height: 177px;
+	width:250px;
+}
+
+.copyright {
+	color: #ffffff;
+	font-size: 13px;
+	margin: 20px;
+}
+
+/* Media Query - Diseño Responsivo */
+
+@media screen and (max-width:480px) {
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+	.caja {
+		width: auto;
+	}
+}
+
+@media screen and (max-width:768px) {
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+		text-align: center;
+	}
+	.caja {
+		width: auto;
+	}
+}
+
+@media screen and (max-width:1024px) {
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+		text-align: center;
+	}
+	.caja {
+		width: auto;
+	}
+}
