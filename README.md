@@ -32,5 +32,5 @@ El proyecto web se desarrollará en grupos de 3 integrantes cada uno. Cada grupo
 - El formulario podrá enviar un email utilizando algún servicio externo destinado para ello.
 
 ## 🔋 Recursos y Materiales:
-- Seminario de Diseño Web: https://youtu.be/fVkGt2tYIj0.
+- [Seminario de Diseño Web](https://youtu.be/fVkGt2tYIj0)
 - Material incluído en el Aula Virtual “Diseño”.
