@@ -1,5 +1,5 @@
 const request = new XMLHttpRequest();
-request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
+request.open('GET', 'https://api.jikan.moe/v4/anime', true);
 
 request.onload = function () {
   if (request.status >= 200 && request.status < 400) {
@@ -9,7 +9,7 @@ request.onload = function () {
     const contenedor = document.getElementById('contenedor');
     contenedor.setAttribute('class', 'card-columns');
     
-    data.forEach((pelicula) => {
+    data.data.forEach((pelicula) => {
       
       // Creamos una tarjeta
       const tarjeta = document.createElement('div');
@@ -30,10 +30,10 @@ request.onload = function () {
       //Creamos la imagen de la tarjeta
       const imagenTarjeta = document.createElement('img');
       imagenTarjeta.setAttribute('class', 'card-img-top');
-      imagenTarjeta.src = pelicula.image;
+      imagenTarjeta.src = pelicula.images.jpg.image_url;
 
       // Creamos el párrafo y le asignamos la descripción de la película
-      pelicula.descripcion = pelicula.description.substring(0, 250);
+      pelicula.descripcion = pelicula.synopsis.substring(0, 250);
 
       const descripcion = document.createElement('p');
       descripcion.setAttribute('class', 'card-text');
